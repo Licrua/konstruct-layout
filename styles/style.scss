@@ -69,7 +69,6 @@ body {
 	}
 
 	&__nav {
-		// width: 70%;
 		border: 1px solid #E6E6E6;
 		display: flex;
 		height: 65px;
@@ -98,30 +97,64 @@ body {
 }
 
 
-// .header__menu {
-// }
-// .header__menu-item {
-// }
-// .header__menu-link {
-// }
+.main {
+	margin: 58px;
+}
 
+
+.complany-story__info-container {
+	display: flex;
+}
 
 .company-story {
 	color: black;
-}
-.company-story__title {
-	text-align: center;
-}
-.complany-story__info {
+	width: 80%;
+	border: 1px salmon solid;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	&__title {
+		position: relative;
+		margin-bottom: 58px;
+		text-align: center;
+		&::after {
+			content: "";
+			position: absolute;
+			left:50%;
+			bottom: -10px;
+			transform: translate(-50%, 50%);
+			width: 50px;
+			height: 2px; /* Толщина подчеркивания */
+			background-color: #00A4E5; /* Цвет подчеркивания */
+		}
+	}
+	&__title {
+		text-align: center;
+	}
+	&__info {
+		display: flex;
+	flex-direction: column;
+	}
 }
+
+.comany-story__highlight {}
+
+// .company-story__title {
+// 	text-align: center;
+// }
+// .complany-story__info {
+// 	display: flex;
+// 	flex-direction: column;
+// }
 .company-story__description {
+	font-size: 20px;
+	letter-spacing: 0.19px;
 }
 .company-story__subdescription {
 }
 .company-story__cards {
 	display: flex;
+	gap: 20px;
 }
 .company-story__cards-item {
 }
