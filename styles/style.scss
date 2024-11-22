@@ -1,0 +1,127 @@
+@import url('/node_modules/normalize.css/normalize.css');
+
+
+
+// peremki
+	$fontFamilyStandart: "Open Sans", sans-serif;
+	$fontFamilySecondary: "Bebas Neue", serif;
+//
+*, *::after, *::before {
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	outline: none;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;;
+	// font-weight: 400;
+	// font-style: normal;
+	color: #FFFFFF;
+}
+
+.container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+}
+.header {
+	&__miniature {
+	background-image: url('/images/bg.png');
+	background-position: center;
+	width: 100%;
+	height: 768px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	}
+	&__logo {
+		margin-top: 41px;
+	}
+	&__logo-img {
+		width: 101.62px;
+		height: 23px;
+	}
+	&__info {
+		text-align: center;
+	}
+	&__title {
+		font-weight: 100;
+	font-family: $fontFamilySecondary;
+	color: white;
+	font-size: 60px;
+	letter-spacing: 5.71px;
+	margin: 0;
+	}
+	&__subtitle {
+		font-size: 1rem;
+		margin: 0;
+	}
+	&__scroll {
+		margin-bottom: 3.5rem;
+	}
+	&__scroll-link {
+		font-size: 0.8rem;
+		color: white;
+		letter-spacing: 3.7px;
+		
+	}
+
+	&__nav {
+		// width: 70%;
+		border: 1px solid #E6E6E6;
+		display: flex;
+		height: 65px;
+		margin: 0 auto;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 250px;
+	}
+	&__nav-logo {
+		width: 80px;
+		height: 18px;
+	}
+	&__menu-list {
+		display: flex;
+		gap: 48px;
+		font-size: 12px;
+		letter-spacing: 1.10px;
+		// color: #48555B;
+	}
+	&__menu-link {
+		color: #48555B;
+	}
+	&__menu-link--active {
+		color: #00A4E5;
+	}
+}
+
+
+// .header__menu {
+// }
+// .header__menu-item {
+// }
+// .header__menu-link {
+// }
+
+
+.company-story {
+	color: black;
+}
+.company-story__title {
+	text-align: center;
+}
+.complany-story__info {
+	display: flex;
+	flex-direction: column;
+}
+.company-story__description {
+}
+.company-story__subdescription {
+}
+.company-story__cards {
+	display: flex;
+}
+.company-story__cards-item {
+}
