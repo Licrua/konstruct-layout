@@ -5,6 +5,7 @@
 // peremki
 	$fontFamilyStandart: "Open Sans", sans-serif;
 	$fontFamilySecondary: "Bebas Neue", serif;
+	// $letterSpacingAverage: 0.19px;
 //
 *, *::after, *::before {
 	box-sizing: border-box;
@@ -69,7 +70,7 @@ body {
 	}
 
 	&__nav {
-		border: 1px solid #E6E6E6;
+		border-bottom: 1px solid #E6E6E6;
 		display: flex;
 		height: 65px;
 		margin: 0 auto;
@@ -99,62 +100,323 @@ body {
 
 .main {
 	margin: 58px;
+	width: 70%;
+	margin: 0 auto;
 }
 
-
-.complany-story__info-container {
-	display: flex;
-}
 
 .company-story {
 	color: black;
-	width: 80%;
-	border: 1px salmon solid;
+	width: 941px;
+	// height: 344px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	&__info-container {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		// justify-content: center;
+	}
 	&__title {
 		position: relative;
-		margin-bottom: 58px;
+		margin-bottom: 50px;
 		text-align: center;
 		&::after {
 			content: "";
 			position: absolute;
-			left:50%;
+			left: 50%;
 			bottom: -10px;
 			transform: translate(-50%, 50%);
 			width: 50px;
-			height: 2px; /* Толщина подчеркивания */
-			background-color: #00A4E5; /* Цвет подчеркивания */
+			height: 2px; 
+			background-color: #00A4E5; 
 		}
 	}
-	&__title {
-		text-align: center;
-	}
 	&__info {
+		height: 100%;
+		margin-bottom: 5px;
+	}
+	
+	&__info p:last-child {
+		// margin: 0;
+		color: #48555B;
+		letter-spacing: 0.19px;
+	}
+	
+	&__description {
+		font-weight: 700;
+		font-size: 20px;
+		letter-spacing: 0.19px;
+		width: 100%;
+		&--highlight {
+			color: #00A4E5;
+		}
+	}
+	&__cards {
 		display: flex;
-	flex-direction: column;
+		gap: 20px;
+		margin-left: 77px;
+		// border: 1px solid darkgoldenrod;
+		// background-color: darksalmon;
+		// width: 140px;
+		// height: 224px;
+		// width: 300px;
+}
+&__cards-item {
+	width: 140px;
+	height: 224px;
+}
+&__card-text {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: 0.19px;
+	margin-left: 14px;
+}
+
+ &__cards-item:first-child {
+	background-image: url('/images/Bitmap.png');
+ }
+ &__cards-item:nth-child(2) {
+	background-image: url('/images/Bitmap-1.png');
+ }
+ &__cards-item:last-child {
+	background-image: url('/images/Bitmap-2.png');
+ }
+}
+
+.our-capabilities {
+	width: 940px;
+	color: #48555B;
+	// margin-top: 100px;
+	margin: 100px auto;
+}
+.our-capabilities__info {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	overflow: hidden;
+	margin-bottom: 71px;
+	gap: 32px;
+	// height: 40px;
+}
+.our-capabilities__title {
+	font-size: 18px;
+	letter-spacing: 2.31px;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		left: 12%;
+		bottom: -10px;
+		transform: translate(-50%, 50%);
+		width: 50px;
+		height: 2px; 
+		background-color: #00A4E5; 
 	}
 }
-
-.comany-story__highlight {}
-
-// .company-story__title {
-// 	text-align: center;
-// }
-// .complany-story__info {
-// 	display: flex;
-// 	flex-direction: column;
-// }
-.company-story__description {
-	font-size: 20px;
-	letter-spacing: 0.19px;
+.our-capabilities__description {
+	font-size: 11px;
+	margin-left: 130px;
+	// line-height: 19px;
 }
-.company-story__subdescription {
+.our-capabilities__button {
+	color: #FFFFFF;
+	font-size: 10px;
+	text-align: center;
+	padding: 0 10px;
+	background-color: #00A4E5;
+	font-weight: bold;
+	width: 140px;
+	border: none;
+	height: 35px;
 }
-.company-story__cards {
+.our-capabilities__cards-list {
 	display: flex;
-	gap: 20px;
+	// border: 1px #E6E6E6 solid;
+	gap: 28px;
+	// padding: 20px;
 }
-.company-story__cards-item {
+.our-capabilities-card {
+	border: 1px #E6E6E6 solid;
+	height: 330px;
+	padding: 20px;
+
 }
+// .our-capabilities-card__image {
+// }
+// .our-capabilities-card__header {
+// }
+// .our-capabilities-card__description {
+// }
+
+// .contact-info {
+	
+// }
+.contact-info-container {
+	text-align: center;
+	background-image: url('/images/contact-info-bg.png');
+	height: 499px;
+	border-bottom: 1px solid black;
+}
+.contact-info__title {
+	color: #48555B;
+	font-size: 30px;
+	letter-spacing: 0.15px;
+	text-align: center;
+}
+.contact-info__button {
+	width: 150px;
+	height: 40px;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 11px 26px;
+	font-weight: bold;
+	background-color: #00A4E5;
+	border: none;
+}
+
+
+
+
+.newsletter {
+}
+.newsletter__container {
+	background-color: #141A20;
+	border: none;
+	display: flex;	
+	justify-content: center;
+	padding: 30px;
+	// background-color: black;
+	border: none;
+	gap: 70px;
+}
+.newsletter__title {
+	font-size: 22px;
+	letter-spacing: 0.85px;
+}
+.newsletter__form {
+	display: flex;
+	width: 400px;
+	height: 40px;
+	align-self: center;
+}
+.newsletter__field {
+	background-color: #FFFFFF;
+	border: 1px #979797 solid;
+	padding: 16px;
+	width: 60%;
+	height: 100%;
+}
+.newsletter__button {
+	color: #FFFFFF;
+	text-align: center;
+	// padding: 0 10px;
+	background-color: #00A4E5;
+	font-weight: bold;
+	// width: 140px;
+	width: 38%;
+	height: 100%;
+	border: none;
+	// height: 35px;
+}
+
+// .footer-info__container {
+// 	width: 100%;
+
+// }
+
+.footer-info {
+	background-color: #141A20;
+	// display: flex;
+	height: 240px;
+	max-width: 1440px;
+	width: 100%;
+	// border: 1px solid  #141A20;
+	// justify-content: center;
+	// padding: 3rem;
+	// width: 100%;
+	// justify-content: center;
+	// align-items: center;
+
+}
+
+.footer-info__container {
+	display: flex;
+	width: 70%;
+	margin: 0 auto;
+	
+}
+
+
+.footer-info__company {
+}
+.footer__title {
+	letter-spacing: 0.85px;
+	font-size: 13px;
+	font-weight: 400;
+}
+.footer-info__link {
+}
+.footer-info_image {
+	width: 101.62px;
+	height: 23px;
+}
+.footer-info_description {
+}
+.footer-links {
+	display: flex;
+
+}
+.footer-links__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+}
+.footer-links__item {
+}
+.footer-links__link {
+	color: white;
+}
+address a {
+	color: white;
+}
+.footer-contact {
+	margin-left: 58px;
+}
+.footer-contact__address {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.footer-contact__email {
+}
+.footer-contact__telephone {
+}
+.social-links {
+	display: flex;
+	margin-left: 46px;
+	margin-top: 40px;
+	gap: 37px;
+}
+.social-links__item {
+}
+
+.footer-credits {
+	text-align: center;
+	display: flex;
+	// border: 1px solid #171819;
+	background-color: #171819;
+	width: 100%;
+	height: 60px;
+	// border: 1px solid  #171819;
+}
+
+// .footer-credits {
+// 	padding: 0;
+// 	margin: 0;
+// }
