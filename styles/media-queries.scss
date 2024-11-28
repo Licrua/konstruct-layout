@@ -1,0 +1,209 @@
+@media (min-width: 962px) and (max-width: 1150px) {
+	.main {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+	.our-capabilities {
+		margin: 0 auto;
+	}
+	.footer-info__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+  }
+
+
+	
+  @media (min-width: 555px) and (max-width: 965px) {
+	.main {
+		width: 80%;
+	}
+	.header__nav {
+		padding: 0;
+		margin: 0;
+		justify-content: center;
+	}
+	
+	.company-story {
+		display: flex;
+		width: initial;
+		flex-wrap: wrap;
+		
+		&__info {
+			display: flex;
+			text-wrap: balance;
+			flex-direction: column;
+			padding: 1rem;
+			align-items: center;
+		}
+		&__cards {
+			margin: 0;
+		}
+		&__info-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 4rem;
+		
+		}
+		&__description {
+			text-align: center;
+		}
+	}
+	
+	.our-capabilities {
+		margin: 0;
+		width: initial;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&__cards-list {
+			flex-direction: column;
+		}
+
+		&__button {
+			width: initial;
+		}
+		&__info {
+			flex-direction: column;
+		}
+		&__title {
+			letter-spacing: 0;
+			&::after {
+				left: 50%;
+			}
+		}
+		&__description {
+			text-align: center;
+			margin-left: 20px;
+			padding: 1rem;
+		}
+	}
+	.newsletter__container {
+		padding: 1rem;
+	}
+	.footer-info {
+		height: 100%;
+		align-items: center;
+		&__container {
+			flex-direction: column;
+			align-items: center;
+			padding: 1rem;
+		}
+		&__company {
+			height: 100%;
+			text-align: center;
+		}
+	}
+	.footer-contact {
+		text-align: center;
+	}
+	.social-links {
+		margin-left: 70px;
+	}
+  }
+
+
+  @media (min-width: 320px) and (max-width: 550px) {
+		.main {
+			margin: 0 auto;
+		}
+		.company-story {
+			&__card-text {
+				font-size: 1rem;
+			}
+			 &__info p:last-child {
+				width: initial;
+			 }
+			 &__cards {
+				flex-wrap: wrap;
+				align-items: center;
+				font-size: 16px;
+				&-item {
+					flex-grow: 1;
+				}
+			 }
+			width: initial;
+			&__description {
+				font-size: initial;
+			}
+			&__info-container {
+				flex-direction: column;
+			}
+		}
+		.header {
+			&__nav {
+				display: flex;
+				justify-content: center;
+				padding: 0px 200px;
+			}
+			&__menu-list {
+				display: block;
+				padding: 1rem;
+				gap: 0.5rem;
+			}
+			&__info {
+				margin-left:  40px;
+			}
+			&__subtitle {
+				padding: 0;
+			}
+		}
+		.our-capabilities {
+
+			width: 100%;
+			// margin-bottom: 2rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 2rem;
+			&__title::after {
+				left: 50%;
+			}
+			&__cards-list {
+				flex-direction: column;
+			}
+			&__info {
+				// padding-bottom: 2rem;
+				flex-direction: column;
+				align-items: center;
+				text-align: initial;
+			}
+			&__description {
+				margin: 0;
+			}
+		}
+		.newsletter {
+			 &__form {
+				width: initial;
+			 }
+			.newsletter__container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+		.footer {
+			&-info {
+				height: 100%;
+				&_description {
+					width: inherit;
+				}
+				&__container {
+					flex-direction: column;
+				}
+			}
+			&-links {
+				display: block;
+			}
+			&-contact  {
+				margin: 0;
+			}
+		}
+  }
