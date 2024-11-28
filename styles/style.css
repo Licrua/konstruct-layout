@@ -91,7 +91,7 @@ body {
 .main {
   margin: 58px;
   width: 70%;
-  margin: 32px auto;
+  margin: 0px auto;
 }
 
 .company-story {
@@ -285,31 +285,26 @@ body {
   border: none;
   display: flex;
   justify-content: center;
-  border: none;
   gap: 70px;
 }
-
 .newsletter__title {
   font-size: 22px;
   letter-spacing: 0.85px;
 }
-
 .newsletter__form {
   display: flex;
   width: 400px;
   height: 40px;
   align-self: center;
 }
-
-.newsletter__field {
+.newsletter-field {
   background-color: #FFFFFF;
   border: 1px #979797 solid;
   padding: 16px;
   width: 60%;
   height: 100%;
 }
-
-.newsletter__button {
+.newsletter-button {
   color: #FFFFFF;
   text-align: center;
   background-color: #00A4E5;
@@ -322,80 +317,18 @@ body {
 .footer {
   margin-top: -49px;
 }
-
-.footer-info {
-  background-color: #141A20;
-  overflow: hidden;
-  padding-top: 31px;
-  height: 240px;
-  max-width: 1440px;
-  width: 100%;
-}
-
-.footer-info__container {
-  display: flex;
-  width: 65%;
-  margin: 0 auto;
-}
-
-.footer-info__company {
-  height: 200px;
-  padding-top: 10px;
-}
-
-.footer__title {
-  letter-spacing: 0.85px;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-.footer-info_image {
-  width: 101.62px;
-  height: 23px;
-}
-
-.footer-info_description {
-  width: 280px;
-}
-
-.footer-links {
-  display: flex;
-}
-
-.footer-links__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-}
-
-.footer-links__link {
-  color: white;
-  font-size: 11px;
-}
-
-address a {
+.footer address a {
   color: white;
 }
-
 .footer-contact {
   margin-left: 89px;
 }
-
 .footer-contact__address {
   font-size: 11px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
-.social-links {
-  display: flex;
-  margin-left: 46px;
-  margin-top: 40px;
-  gap: 37px;
-}
-
 .footer-credits {
   text-align: center;
   display: flex;
@@ -404,4 +337,52 @@ address a {
   width: 100%;
   height: 60px;
   margin-bottom: 10px;
+}
+.footer-links {
+  display: flex;
+}
+.footer-links__link {
+  color: white;
+  font-size: 11px;
+}
+.footer-links__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.footer__title {
+  letter-spacing: 0.85px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.footer-info {
+  background-color: #141A20;
+  overflow: hidden;
+  padding-top: 31px;
+  height: 240px;
+  max-width: 1440px;
+  width: 100%;
+}
+.footer-info__container {
+  display: flex;
+  width: 65%;
+  margin: 0 auto;
+}
+.footer-info__company {
+  height: 200px;
+  padding-top: 10px;
+}
+.footer-info_image {
+  width: 101.62px;
+  height: 23px;
+}
+.footer-info_description {
+  width: 280px;
+}
+.footer .social-links {
+  display: flex;
+  margin-left: 46px;
+  margin-top: 40px;
+  gap: 37px;
 }/*# sourceMappingURL=style.css.map */
