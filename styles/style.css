@@ -178,7 +178,6 @@ body {
   margin-left: 34px;
   margin-top: 11px;
 }
-
 .our-capabilities__info {
   display: flex;
   flex-direction: row;
@@ -187,7 +186,6 @@ body {
   margin-bottom: 90px;
   gap: 32px;
 }
-
 .our-capabilities__title {
   font-size: 18px;
   letter-spacing: 2.31px;
@@ -203,13 +201,11 @@ body {
   height: 2px;
   background-color: #00A4E5;
 }
-
 .our-capabilities__description {
   font-size: 11px;
   margin-left: 130px;
   line-height: 17px;
 }
-
 .our-capabilities__button {
   margin-top: 14px;
   color: #FFFFFF;
@@ -221,24 +217,20 @@ body {
   border: none;
   height: 41px;
 }
-
 .our-capabilities__cards-list {
   display: flex;
   gap: 28px;
 }
-
 .our-capabilities-card {
   border: 1px #E6E6E6 solid;
   width: 295px;
   gap: 28px;
   padding: 35px 25px;
 }
-
 .our-capabilities-card__header {
   margin-top: 13px;
   font-size: 16px;
 }
-
 .our-capabilities-card__description {
   font-size: 13px;
   line-height: 23px;
@@ -247,14 +239,12 @@ body {
 .contact-info {
   margin-top: 178px;
 }
-
 .contact-info-container {
   text-align: center;
   background-image: url("/images/contact-info-bg.png");
   height: 499px;
   border-bottom: 1px solid black;
 }
-
 .contact-info__title {
   display: flex;
   color: #48555B;
@@ -265,7 +255,6 @@ body {
   text-align: center;
   margin: 0px;
 }
-
 .contact-info__button {
   width: 150px;
   margin: -11px;
@@ -297,14 +286,14 @@ body {
   height: 40px;
   align-self: center;
 }
-.newsletter-field {
+.newsletter__field {
   background-color: #FFFFFF;
   border: 1px #979797 solid;
   padding: 16px;
   width: 60%;
   height: 100%;
 }
-.newsletter-button {
+.newsletter__button {
   color: #FFFFFF;
   text-align: center;
   background-color: #00A4E5;
